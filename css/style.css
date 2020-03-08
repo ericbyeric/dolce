@@ -1,0 +1,210 @@
+body{
+    font-family: 'Baloo', cursive;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+#slider, .image-container, .slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60vh;
+    overflow-x:hidden;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.image-container {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(207, 87, 87, 0.3),  /* red, green, blue, alpha */
+                -30px 0px 40px rgba(207, 87, 87, 0.3);  
+}
+
+#landing {
+    background: rgb(255, 254, 253);
+}
+
+#landing-text {
+    display:flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;    /* horizontally center */
+    align-items: center;        /* vertically center */
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h1{
+    color: #F8B195
+}
+
+#landing-text h2 {
+    color: #F67280;
+}
+
+#landing-image {
+    background: url("../images/main.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 2px #C06C84 solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #C06C84;
+    transition: background 500ms ease;
+    transition: color 200ms ease;
+}
+
+.btn:hover {
+    background: #F8B195;
+    color: #ffffff;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #F8B195;
+    color: #355C7D
+}
+
+#header h2 {
+    border-left: dotted 2px #F67280;
+    border-right: dotted 2px #F67280;
+    display: inline-block;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.image-container {
+
+}
+
+.slide-1, .slide-2, .slide-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* pics url */
+.lookatme1{ background-image: url('../images/lookatme1.jpeg') }
+.lookatme2{ background-image: url('../images/lookatme2.JPG') }
+.lookatme3{ background-image: url('../images/lookatme3.JPG') }
+.lookatme4{ background-image: url('../images/lookatme4.JPG') }
+.sleep1{ background-image: url('../images/sleep1.JPG') }
+.sleep2{ background-image: url('../images/sleep2.JPG') }
+.sleep3{ background-image: url('../images/sleep3.JPG') }
+.withus1{ background-image: url('../images/withus1.JPG') }
+.withus2{ background-image: url('../images/withus2.JPG') }
+.withus3{ background-image: url('../images/withus3.JPG') }
+.withus4{ background-image: url('../images/withus4.JPG') }
+.withus5{ background-image: url('../images/withus5.JPG') }
+.withus6{ background-image: url('../images/withus6.JPG') }
+.withus7{ background-image: url('../images/withus7.JPG') }
+
+#slider {
+    position: relative;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left-1, #arrow-left-2, #arrow-left-3 {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #F8B195 transparent transparent;
+    left: 0;        /* 'left arror' from the left */
+    margin-left: 30px;
+    
+    
+}
+
+#arrow-right-1, #arrow-right-2, #arrow-right-3 {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #F8B195;
+    right: 0;        /* 'left arror' from the left */
+    margin-right: 30px;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+    background: #F8B195;
+    color: rgb(247, 96, 111);
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: rgb(247, 96, 111);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media(min-width: 700px){
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+        font-size: 1.5rem;
+    }
+}
